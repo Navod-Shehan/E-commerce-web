@@ -5,7 +5,7 @@ import {FormHelperText, IconButton, Input, InputAdornment, InputLabel} from "@ma
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import {NavLink} from "react-router-dom";
-import GroceryBag from "../assets/images/grocery-bag-5.png";
+import GroceryBag from "../assets/images/SEO-Food-Fresh-Groceries.png";
 import {AlternateEmail, Lock} from "@material-ui/icons";
 
 const LogIn: React.FC = () => {
