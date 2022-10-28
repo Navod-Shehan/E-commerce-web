@@ -5,7 +5,7 @@ import {AlternateEmail, Lock, Visibility, VisibilityOff, Phone} from '@material-
 import {FormHelperText, IconButton, Input, InputAdornment, InputLabel} from "@material-ui/core";
 import PersonIcon from '@material-ui/icons/Person';
 import {Link} from "react-router-dom";
-import GroceryBag from "../assets/images/grocery-bag-5.png";
+import GroceryBag from "../assets/images/SEO-Food-Fresh-Groceries.png";
 import {useDispatch} from "react-redux";
 import {bindActionCreators} from "redux";
 import {UserActionCreator} from "../state";
