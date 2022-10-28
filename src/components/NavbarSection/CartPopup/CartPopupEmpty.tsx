@@ -15,7 +15,7 @@ const CartPopupEmpty: React.FC = () => {
                     <label className="text-1">Your Cart is empty</label>
                 </Col>
                 <Col xs={12}>
-                    <label className="text-2">Add items to your cart :)</label>
+                    <label className="text-2">Add items to your cart !</label>
                 </Col>
             </Row>
         </>

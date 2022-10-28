@@ -35,7 +35,7 @@ const ProductCardsSection: FC<productCardTypes> = (props) => {
 
   const renderEmptyBanner = () => {
     if ((categoryName === "Grocery" && groceryEmpty) || (categoryName === "Food" && foodEmpty) ||
-      (categoryName === "Pharmacy" && pharmacyEmpty) || (categoryName === "Electronic" && electronicEmpty)) {
+      (categoryName === "Pharmacy" && pharmacyEmpty) || (categoryName === "Beverages" && electronicEmpty)) {
       return (<NoProductsAvailable/>)
     }
   }

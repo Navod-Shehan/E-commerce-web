@@ -12,7 +12,7 @@ const EmptyCart: FC = () => {
         Your Cart is empty
       </Col>
       <Col className="text-center pt-1 pb-2" xs={12}>
-        Add items to your cart :)
+        Add items to your cart !
       </Col>
     </Row>
   );

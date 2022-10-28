@@ -39,13 +39,7 @@ const NavbarLinks: React.FC = () => {
               <NavLink to="/" activeClassName="active" className="mx-3 my-auto ">Home</NavLink>
               <NavLink to="/about-us" activeClassName="active" className="mx-3 my-auto">About us</NavLink>
               <NavLink to="/faq" activeClassName="active" className="mx-3 my-auto">FAQ</NavLink>
-              <Button variant="outline-danger"
-                      id="btnPricing"
-                      className="mx-2 my-auto">
-                <NavLink to="/pricing" activeClassName="active"
-                         className="my-2 my-sm-auto">Pricing
-                </NavLink>
-              </Button>
+              
               <NavLink to="/contact-us" activeClassName="active" className="mx-3 my-auto">Contact us
               </NavLink>
             </Nav>

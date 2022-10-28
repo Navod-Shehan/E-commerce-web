@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Icon from 'react-feather';
 import {Col, Container, Image, Nav, Navbar, Row} from "react-bootstrap";
-import SoftVesselLogo from "../assets/images/logo.png";
+import SoftVesselLogo from "../assets/images/groceria_logo.png";
 import {LinkContainer} from 'react-router-bootstrap';
 
 const Footer: React.FC = () => {
@@ -14,14 +14,12 @@ const Footer: React.FC = () => {
               <LinkContainer to="/">
                 <Nav.Link className="mx-2">HOME</Nav.Link>
               </LinkContainer>
-              <Nav.Link href="https://www.softvessel.com/about" target="_blank" className="mx-2">ABOUT US</Nav.Link>
+              <Nav.Link href="" target="_blank" className="mx-2">ABOUT US</Nav.Link>
               <LinkContainer to="/faq">
                 <Nav.Link className="mx-2">FAQ</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/pricing">
-                <Nav.Link className="mx-2">PRICING</Nav.Link>
-              </LinkContainer>
-              <Nav.Link href="https://www.softvessel.com/contact" target="_blank" className="mx-2">CONTACT US</Nav.Link>
+              
+              <Nav.Link href="" target="_blank" className="mx-2">CONTACT US</Nav.Link>
             </Nav>
           </Col>
         </Navbar>
@@ -30,12 +28,10 @@ const Footer: React.FC = () => {
           <Image src={SoftVesselLogo} alt="SoftVessel Logo"/>
         </Col>
         <Col>
-          <p>SoftVessel (Pvt) Ltd.<br/>
-            60 Cotta Road, Colombo 8, <br/>
-            Sri Lanka <br/>
-            +94 779 510 260 <br/>
-            +94 112 680 360 <br/>
-            Copyright © 2020
+          <p>Groceria<br/>
+            +94 702 181 481 <br/>
+            +94 112 440 663 <br/>
+            Copyright © 2022
           </p>
         </Col>
         <Col className="mb-4">

@@ -32,7 +32,7 @@ const AddProduct: FC<AddProductProps> = (props): any => {
     {value: 'Grocery', label: 'Grocery'},
     {value: 'Pharmacy', label: 'Pharmacy'},
     {value: 'Food', label: 'Food'},
-    {value: 'Electronic', label: 'Electronic'}
+    {value: 'Beverages', label: 'Beverages'}
   ];
 
   const [name, setName] = useState<string>("");
@@ -148,8 +148,8 @@ const AddProduct: FC<AddProductProps> = (props): any => {
       case "Food":
         productCategory = {value: "Food", label: "Food"};
         break;
-      case "Electronic":
-        productCategory = {value: "Electronic", label: "Electronic"};
+      case "Beverages":
+        productCategory = {value: "Beverages", label: "Beverages"};
         break;
       default:
         productCategory = {value: "Grocery", label: "Grocery"};

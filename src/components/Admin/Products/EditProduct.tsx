@@ -25,7 +25,7 @@ const EditProduct: FC<EditProductTypes> = (props) => {
     {value: 'Grocery', label: 'Grocery'},
     {value: 'Pharmacy', label: 'Pharmacy'},
     {value: 'Food', label: 'Food'},
-    {value: 'Electronic', label: 'Electronic'}
+    {value: 'Beverages', label: 'Beverages'}
   ];
 
   const Products = useSelector((state: State) => state.Products);
@@ -52,9 +52,9 @@ const EditProduct: FC<EditProductTypes> = (props) => {
         productId = 2;
         console.log("Food");
         break;
-      case "Electronic":
+      case "Beverages":
         productId = 3;
-        console.log("Electronic");
+        console.log("Beverages");
         break;
       default:
         productId = 0;
@@ -115,7 +115,7 @@ const EditProduct: FC<EditProductTypes> = (props) => {
       case "Food":
         productId = 2;
         break;
-      case "Electronic":
+      case "Beverages":
         productId = 3;
         break;
       default:

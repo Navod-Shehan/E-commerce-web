@@ -10,7 +10,7 @@ const AccountSignIn: FC = () => {
             Already have an account?
           </Col>
           <Col className="px-0 btn-container text-center pt-3">
-            <Button className="sign-in-btn">Sign in</Button>
+            <Button className="sign-in-btn">Login</Button>
           </Col>
         </Row>
       </Col>

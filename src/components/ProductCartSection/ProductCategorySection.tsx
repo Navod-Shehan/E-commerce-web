@@ -2,9 +2,7 @@ import React from 'react';
 import {Col, Row} from "react-bootstrap";
 import CategoryItem from "./CategoryItem";
 import allImg from '../../assets/images/all.webp'
-import grossImg from '../../assets/images/gross.webp'
-import mediImg from '../../assets/images/medi.webp'
-import toolsImg from '../../assets/images/tools.webp'
+import bevImg from '../../assets/images/beverage.png'
 import foodImg from '../../assets/images/food.webp'
 
 type productCategoryTypes = {
@@ -22,14 +20,10 @@ const ProductCategorySection = (props: productCategoryTypes) => {
         <Col className="our-products-category-items py-4 px-4 mx-3" id='products'>
           <CategoryItem image={allImg} selectedCategory={props.selectedCategory}
                         setSelectedCategory={props.setSelectedCategory} name="All"/>
-          <CategoryItem image={grossImg} selectedCategory={props.selectedCategory}
-                        setSelectedCategory={props.setSelectedCategory} name="Grocery"/>
-          <CategoryItem image={mediImg} selectedCategory={props.selectedCategory}
-                        setSelectedCategory={props.setSelectedCategory} name="Pharmacy"/>
           <CategoryItem image={foodImg} selectedCategory={props.selectedCategory}
                         setSelectedCategory={props.setSelectedCategory} name="Food"/>
-          <CategoryItem image={toolsImg} selectedCategory={props.selectedCategory}
-                        setSelectedCategory={props.setSelectedCategory} name="Electronic"/>
+          <CategoryItem image={bevImg} selectedCategory={props.selectedCategory}
+                        setSelectedCategory={props.setSelectedCategory} name="Beverages"/>
         </Col>
       </Row>
     </>

@@ -19,8 +19,8 @@ const CategoryItem = (props: CategoryItemProps) => {
           props.setSelectedCategory(props.name)
         }}>
           <Image src={props.image}
-                 width="50%"
-                 height="auto"
+                 width="162px"
+                 height="162px"
                  className="cat-img"
           />
         </Col>

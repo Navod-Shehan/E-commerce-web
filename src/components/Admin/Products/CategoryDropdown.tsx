@@ -14,7 +14,7 @@ const CategoryDropdown: FC<CategoryDropdownProps> = (props) => {
     {value: 'Grocery', label: 'Grocery'},
     {value: 'Pharmacy', label: 'Pharmacy'},
     {value: 'Food', label: 'Food'},
-    {value: 'Electronic', label: 'Electronic'}
+    {value: 'Beverages', label: 'Beverages'}
   ];
 
   const handleOnChangeCategory = (item: any) => {
@@ -29,8 +29,8 @@ const CategoryDropdown: FC<CategoryDropdownProps> = (props) => {
       case "Food":
         productCategory = "Food";
         break;
-      case "Electronic":
-        productCategory = "Electronic";
+      case "Beverages":
+        productCategory = "Beverages";
         break;
       default:
         productCategory = "All";

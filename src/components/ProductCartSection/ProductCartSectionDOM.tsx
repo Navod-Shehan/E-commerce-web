@@ -14,17 +14,14 @@ const  ProductCartSectionDOM: React.FC = () => {
       {(categoryName === 'All') ?
         <>
           <ProductCardsSection categoryName={"Grocery"}/>
-          <ProductCardsSection categoryName={"Pharmacy"}/>
           <ProductCardsSection categoryName={"Food"}/>
-          <ProductCardsSection categoryName={"Electronic"}/>
+          <ProductCardsSection categoryName={"Beverages"}/>
         </>
         : (categoryName === 'Grocery') ?
           <ProductCardsSection categoryName={"Grocery"}/>
-          : (categoryName === 'Pharmacy') ?
-            <ProductCardsSection categoryName={"Pharmacy"}/>
             : (categoryName === 'Food') ?
               <ProductCardsSection categoryName={"Food"}/>
-              : <ProductCardsSection categoryName={"Electronic"}/>
+              : <ProductCardsSection categoryName={"Beverages"}/>
       }
     </Container>
   )
