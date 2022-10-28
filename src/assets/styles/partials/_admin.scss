@@ -1,0 +1,307 @@
+@import "../variables";
+
+.admin {
+  .nav-pills .nav-link {
+    color: #157347;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: white;
+    border: 2px solid #157347;
+    font-weight: 500;
+  }
+
+  .products, .orders {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    .title {
+      font-weight: 600;
+      font-size: 1.6em;
+      color: $primary-colour;
+    }
+
+    .admin-products {
+      border-bottom: 1px solid lightgray;
+
+      .item-card {
+        border: 1px solid $border-color;
+        border-radius: 0.5em;
+
+        .crossed-val {
+          text-decoration: line-through;
+          color: $project-gray;
+          font-size: medium;
+        }
+
+        .item-val {
+          color: $project-green;
+          font-size: medium;
+          font-weight: 600;
+
+          .cent-val {
+            font-size: 0.8em;
+          }
+        }
+
+        .card-btn {
+          border-radius: 10px;
+          width: 5em;
+        }
+      }
+    }
+
+    .add-product, .edit-product {
+      .form {
+        .form-title {
+          font-weight: 600;
+          font-size: 1.2em;
+          color: $primary-colour;
+        }
+
+        .form-body {
+          .input-field {
+            border-color: gray;
+            font-size: 0.88em;
+          }
+
+          .label-small {
+            font-size: 0.88em;
+          }
+        }
+      }
+
+      .preview-card {
+        border: 1px solid $border-color;
+        border-radius: 0.5em;
+
+        .crossed-val {
+          text-decoration: line-through;
+          color: $project-gray;
+          font-size: medium;
+        }
+
+        .item-val {
+          color: $project-green;
+          font-size: medium;
+          font-weight: 600;
+
+          .cent-val {
+            font-size: 0.8em;
+          }
+        }
+
+        .card-btn {
+          border-radius: 10px;
+          width: 5em;
+        }
+      }
+    }
+
+    .admin-orders {
+
+      .btn-primary {
+        background: $admin-order-view-btn-background-color;
+        border-color: $admin-order-view-btn-background-color;
+      }
+
+      .react-bootstrap-table .table-responsive {
+        table-layout: auto;
+      }
+
+      .order-table {
+
+        tr {
+          border-bottom: 1px solid #dee2e6;
+        }
+
+        thead th {
+          font-size: 0.9em;
+          text-align: center;
+          border-style: none;
+          vertical-align: top;
+        }
+
+        thead tr > {
+          :first-child {
+            width: 4.5em;
+            min-width: 3.5em;
+          }
+
+          :last-child {
+            width: 4em;
+          }
+
+          :nth-child(2) {
+            width: 11em;
+          }
+
+          :nth-child(3) {
+            min-width: 5.5em;
+          }
+
+          :nth-child(4) {
+            width: 12em;
+            min-width: 5.5em;
+          }
+
+          :nth-child(5) {
+            width: 12em;
+            min-width: 5.5em;
+          }
+
+          :nth-child(6) {
+            width: 3em;
+          }
+
+          :nth-child(7) {
+            width: 8em;
+          }
+        }
+
+        tbody td {
+          text-align: center;
+          font-size: 0.96em;
+          font-weight: 500;
+          vertical-align: middle;
+          padding: 1em;
+          color: $table_font_color;
+        }
+
+        tbody tr > {
+          :first-child {
+            font-weight: bold;
+          }
+
+          :nth-child(2) {
+            font-size: 0.9em;
+          }
+
+          :nth-child(7) {
+            button {
+              font-size: 0.96em;
+            }
+          }
+
+          //:nth-child(3) {
+          //  text-align: left;
+          //}
+        }
+      }
+
+      .react-bootstrap-table-pagination {
+        padding-top: 1em;
+        font-size: 0.96em;
+
+        .react-bootstrap-table-pagination-total {
+          margin-left: 1em;
+        }
+
+        .pagination {
+          justify-content: flex-end;
+
+          .page-item .page-link {
+            color: $pagination_btn_font_color;
+          }
+
+          .page-item.active .page-link {
+            color: $pagination_btn_hover_color;
+            background-color: $selected_pagination_btn_bgcolor;
+            border-color: $selected_pagination_btn_bgcolor;
+          }
+        }
+      }
+
+      .items-image-set {
+        padding-top: 2px;
+        padding-right: 6px;
+
+        div {
+          width: 38px;
+          height: 38px;
+          border: 2px solid white;
+          border-radius: 50%;
+          box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 6px;
+          display: inline-block;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: white;
+        }
+
+        :not(:first-child) {
+          margin-top: -16px;
+        }
+      }
+    }
+  }
+
+  .no-products-available, .no-orders-available {
+    color: $no-products-available-color !important;
+    border: 2px solid $no-products-available-color;
+    padding: 1.5em 0 1.5em 0;
+
+    .text {
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+  }
+}
+
+.delete-confirm-alert {
+  text-align: center;
+  width: fit-content;
+  padding: 25px 45px;
+  background: white;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.12);
+  color: black;
+  border-radius: 10px;
+
+  .delete-confirm-text {
+    span {
+      font-size: 1.1em;
+      padding: 40px;
+    }
+  }
+
+  button {
+    background: none;
+    font-weight: 600;
+    border-width: 1.5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  .label, .preview {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .preview-small, .label-small {
+    display: none;
+  }
+
+  .admin-orders .items-image-set {
+    div {
+      width: 42px;
+      height: 42px;
+      border: 3px solid white;
+    }
+
+    :not(:first-child) {
+      margin-left: -10px;
+    }
+  }
+}
+
