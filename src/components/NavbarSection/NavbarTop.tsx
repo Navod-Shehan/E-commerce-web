@@ -12,9 +12,9 @@ const NavbarTop: React.FC = () => {
             <Navbar expand="lg" className="navbar-top py-0 mx-3 my-2 ms-lg-auto my-lg-0 justify-content-center">
               <label className="me-3 ms-auto">
                 <NavLink to="/Admin">
-                  {/* <Button id="btnRegister" className="bg-white mx-2 rounded-1 btn-outline">
+                  <Button id="btnRegister" className="bg-white mx-2 rounded-1 btn-outline">
                     Admin
-                  </Button> */}
+                  </Button>
                 </NavLink>
               </label>
               <label className="me-3 ms-auto">

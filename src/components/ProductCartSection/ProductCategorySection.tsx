@@ -14,14 +14,14 @@ const ProductCategorySection = (props: productCategoryTypes) => {
   return (
     <>
       <Row>
-        <Col className="our-products text-center "><h3>Our Products</h3></Col>
+        <Col className="our-products text-center "><h3>PRODUCTS</h3></Col>
       </Row>
       <Row id='products'>
         <Col className="our-products-category-items py-4 px-4 mx-3" id='products'>
-          <CategoryItem image={allImg} selectedCategory={props.selectedCategory}
+          {/* <CategoryItem image={allImg} selectedCategory={props.selectedCategory}
                         setSelectedCategory={props.setSelectedCategory} name="All"/>
           <CategoryItem image={foodImg} selectedCategory={props.selectedCategory}
-                        setSelectedCategory={props.setSelectedCategory} name="Food"/>
+                        setSelectedCategory={props.setSelectedCategory} name="Food"/> */}
           <CategoryItem image={bevImg} selectedCategory={props.selectedCategory}
                         setSelectedCategory={props.setSelectedCategory} name="Beverages"/>
         </Col>

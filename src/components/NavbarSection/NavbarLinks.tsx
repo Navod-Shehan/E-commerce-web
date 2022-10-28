@@ -24,7 +24,7 @@ const NavbarLinks: React.FC = () => {
         <Col xs={12} sm={11} md={10} lg={10} className="p-0 px-2 px-md-0">
           <Navbar className="navbar-links mt-2 mt-sm-3 mb-3 pt-1 pb-0">
             <Nav className="ms-0 flex-wrap m-0 p-0">
-              <NavDropdown title="Categories" id="collapsible-nav-dropdown"
+              {/* <NavDropdown title="Categories" id="collapsible-nav-dropdown"
                            className="mx-2 rounded-1 outline-green py-0 px-1 my-2 my-sm-auto">
                 <NavDropdown.Item onClick={() => handleOnSelect("All")}>
                   All
@@ -35,7 +35,7 @@ const NavbarLinks: React.FC = () => {
                 <NavDropdown.Item onSelect={() => handleOnSelect("Beverages")}>
                   Beverages
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               <NavLink to="/" activeClassName="active" className="mx-3 my-auto ">Home</NavLink>
               <NavLink to="/about-us" activeClassName="active" className="mx-3 my-auto">About us</NavLink>
               <NavLink to="/faq" activeClassName="active" className="mx-3 my-auto">FAQ</NavLink>
